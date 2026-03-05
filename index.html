@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Memory Matching Game</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>Memory Matching Game</h1>
+
+<div id="controls">
+
+<label for="difficulty">Difficulty:</label>
+
+<select id="difficulty">
+<option value="8">Easy</option>
+<option value="12">Medium</option>
+<option value="16">Hard</option>
+</select>
+
+<button id="restart">Restart Game</button>
+
+</div>
+
+<div id="stats">
+
+Moves: <span id="moves">0</span> |
+Time: <span id="timer">0</span> seconds
+
+</div>
+
+<div id="gameBoard"></div>
+
+<div id="winMessage">
+
+<h2>You Win!</h2>
+<p>All pairs matched.</p>
+
+</div>
+
+<audio id="matchSound" src="match.mp3"></audio>
+<audio id="wrongSound" src="wrong.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
